@@ -17,3 +17,35 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://itnav:itnav4282@localhost:18080/Login')
+
+WebUI.setText(findTestObject('Object Repository/Page_Login/input_ID_login-id'), '131172004')
+
+WebUI.click(findTestObject('Object Repository/Page_Login/input_ID_next'))
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Login/input__password'), '0pH2CVbNgCxT+pJSMWYN+A==')
+
+WebUI.click(findTestObject('Object Repository/Page_Login/input__login'))
+
+WebUI.scrollToElement(findTestObject('Object Repository/Page_Menu/span_'), 0)
+
+WebUI.click(findTestObject('Object Repository/Page_Menu/span_'))
+//
+WebUI.setText(findTestObject('Object Repository/Page_Master/input__tel'), '00000000000')
+
+WebUI.click(findTestObject('Object Repository/Page_Master/a_'))
+
+WebUI.click(findTestObject('Object Repository/Page_Master/button_'))
+
+WebUI.doubleClick(findTestObject('Object Repository/Page_Master/input__tel'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Master/input__tel'), '')
+
+WebUI.click(findTestObject('Object Repository/Page_Master/a_'))
+
+WebUI.click(findTestObject('Object Repository/Page_Master/button_'))
+
+WebUI.closeBrowser()
+
